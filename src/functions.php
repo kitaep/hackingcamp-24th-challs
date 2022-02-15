@@ -1,5 +1,5 @@
 <?php
-    $functions = get_defined_functions();
+    $functions = get_defined_functions(true);
     
     $df = "";
     foreach ($functions["internal"] as $key => $value) {

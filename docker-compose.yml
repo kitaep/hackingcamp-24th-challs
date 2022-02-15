@@ -3,6 +3,4 @@ services:
   php-apache:
     build: .
     ports:
-      - "4001:80"
-    volumes:
-      - "./src/:/var/www/html/"
+      - "32001:80"

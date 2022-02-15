@@ -1,4 +1,4 @@
-FROM php:8.1-apache
+FROM php:7.4-apache
 
 COPY src/ /var/www/html/
 
@@ -11,3 +11,4 @@ RUN rm /flag.c
 
 RUN chown -R root:www-data /var/www/
 RUN chmod -R 755 /var/www/
+RUN chmod 775 /var/www/html/uploads/
